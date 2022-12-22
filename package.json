@@ -1,0 +1,21 @@
+{
+  "type": "module",
+  "name": "facerec",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "@tensorflow/tfjs-node": "^4.1.0",
+    "@vladmandic/face-api": "^1.7.7",
+    "canvas": "^2.10.2",
+    "express": "^4.18.2",
+    "face-api.js": "^0.22.2",
+    "node-fetch": "^3.3.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
