@@ -5,7 +5,7 @@ import Webcam from '../components/Webcam.vue'
   <div
     class="flex flex-col lg:flex-row justify-center items-center border gap-10 rounded-3xl bg-yellow-200 p-12 shadow-lg">
     <div class="flex flex-col gap-8 text-black items-center justify-center px-5 w-full">
-      <span class="w-3/4">
+      <span class="w-full md:w-3/4">
         <label class="block tracking-wide text-gray-700 uppercase text-xs font-bold mb-2" for="username">
           Email or Phone Number
         </label>
@@ -13,7 +13,7 @@ import Webcam from '../components/Webcam.vue'
           class="shadow-lg appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
           id="username" type="text">
       </span>
-      <span class="w-3/4">
+      <span class="w-full md:w-3/4">
         <label class="block tracking-wide text-gray-700 uppercase text-xs font-bold mb-2" for="password">
           Password
         </label>

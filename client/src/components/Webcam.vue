@@ -1,12 +1,5 @@
 <template>
-  <main class="flex h-screen items-center justify-center p-5">
-    <div v-show="isCameraOpen && isLoading" class="camera-loading">
-      <ul class="loader-circle">
-        <li></li>
-        <li></li>
-        <li></li>
-      </ul>
-    </div>
+  <main class="flex h-screen items-center justify-center">
 
     <Transition>
       <div v-if="isCameraOpen" class="camera-box">
@@ -20,8 +13,8 @@
           ">
           <div class="flex flex-col items-center justify-center p-6 bg-white rounded-md shadow-xl">
             <div class="flex items-center justify-between">
-              <h3 class="text-2xl pr-4">Please align yourself with your camera</h3>
-              <button type="button" @click="toggleCamera">
+              <h3 class="text-2xl pb-4 px-4">Please align yourself with your camera</h3>
+              <button class="pb-4" type="button" @click="toggleCamera">
                 <svg @click="isOpen = false" xmlns="http://www.w3.org/2000/svg"
                   class="w-8 h-8 text-red-900 cursor-pointer" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -55,6 +48,7 @@ export default {
   },
   watch: {
     isCameraOpen: function (newVal, oldVal) {
+      console.log(this.isCameraOpen)
       this.isCameraOpen = newVal
       this.createCameraElement()
     }
